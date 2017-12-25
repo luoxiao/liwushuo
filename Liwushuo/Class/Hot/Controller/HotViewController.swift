@@ -30,7 +30,7 @@ class HotViewController: BaseGoodsFeedViewController {
     }
     
     @objc private func pullDownLoadData() {
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_SEC)))
+        let delayTime = dispatch_time(dispatch_time_t(DispatchTime.now()), Int64(2 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             self.collectionView.mj_header.endRefreshing()
         }

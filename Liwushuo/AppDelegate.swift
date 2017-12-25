@@ -25,12 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor(red: 255.0/255.0, green: 2.0/255.0, blue: 51.0/255, alpha: 1.0)
         
         // 创建窗口
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = TabBarController()
         window?.makeKeyAndVisible()
         
-        SVProgressHUD.setBackgroundColor(UIColor.blackColor())
-        SVProgressHUD.setForegroundColor(UIColor.whiteColor())
+        SVProgressHUD.setBackgroundColor(UIColor.black)
+        SVProgressHUD.setForegroundColor(UIColor.white)
         
         return true
     }

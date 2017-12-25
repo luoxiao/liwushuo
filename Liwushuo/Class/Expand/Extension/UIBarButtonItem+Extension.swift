@@ -12,21 +12,21 @@ extension UIBarButtonItem {
     
     /// 礼物
     convenience init(gifTarget: AnyObject?, action: Selector){
-        let btn = UIButton(type: UIButtonType.Custom)
-        btn.setImage(UIImage(named: "feed_signin"), forState: UIControlState.Normal)
+        let btn = UIButton(type: UIButtonType.custom)
+        btn.setImage(UIImage(named: "feed_signin"), for: UIControlState.normal)
         btn.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
-        btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
-        btn.addTarget(gifTarget, action: action, forControlEvents: UIControlEvents.TouchUpInside)
+        btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+        btn.addTarget(gifTarget, action: action, for: UIControlEvents.touchUpInside)
         self.init(customView: btn)
     }
     
     /// 搜索
     convenience init(searchTarget: AnyObject?, action: Selector){
-        let btn = UIButton(type: UIButtonType.Custom)
-        btn.setImage(UIImage(named: "icon_navigation_search"), forState: UIControlState.Normal)
+        let btn = UIButton(type: UIButtonType.custom)
+        btn.setImage(UIImage(named: "icon_navigation_search"), for: UIControlState.normal)
         btn.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
-        btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Right
-        btn.addTarget(searchTarget, action: action, forControlEvents: UIControlEvents.TouchUpInside)
+        btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.right
+        btn.addTarget(searchTarget, action: action, for: UIControlEvents.touchUpInside)
         self.init(customView: btn)
     }
     
